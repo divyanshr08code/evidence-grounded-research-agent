@@ -37,3 +37,14 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local corpus and generated run artifacts (indexes, embeddings, traces).
+# Fixture corpora used by tests live under tests/fixtures/ and are tracked.
+data/*
+!data/.gitkeep
+runs/*
+!runs/.gitkeep
+
+# Claude Code local/session configuration (machine-specific paths, this
+# session's command approvals) -- not shared project config.
+.claude/
